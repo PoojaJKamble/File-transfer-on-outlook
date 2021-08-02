@@ -1,9 +1,10 @@
+#import required modules
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
-
+#mail content
 mail_content = '''Greetings,
 Please find attached Report.
 
@@ -14,9 +15,9 @@ Thank You!'''
 
 
 #The mail addresses and password
-sender_address = "pooja_kamble@hotmail.com"
-sender_pass = "*********"
-receiver_address = "pooja_kamble@hotmail.com"
+sender_address = "abc_xyz@hotmail.com"  #Enter correct mail sender and receiver mail id with password
+sender_pass = "password"
+receiver_address = "abc_xyz@hotmail.com"
 #Setup the MIME
 message = MIMEMultipart()
 message['From'] = sender_address
